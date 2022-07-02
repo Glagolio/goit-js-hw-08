@@ -21,8 +21,7 @@ player.on('timeupdate', throttle(function () {
     });
     }, 1000));
 
-player.on('play', function () {
-    player.setCurrentTime(localStorage.getItem('videoplayer-current-time'))
-})
+player.setCurrentTime(localStorage.getItem('videoplayer-current-time'));
+
     
 
